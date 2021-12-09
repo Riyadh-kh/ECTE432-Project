@@ -1,25 +1,40 @@
 {
 	'objects' => [
 		{
-			'name' => '/Final_Design_Updated/Clock'
-		},
-		{
 			'name' => '/Final_Design_Updated/Logical/Out1'
 		},
 		{
-			'name' => '/Final_Design_Updated/Subsystem3/Out3'
+			'name' => '/Final_Design_Updated/Clock'
 		},
 		{
 			'name' => '/Final_Design_Updated/Black Box/Out1'
 		},
 		{
+			'name' => '/Final_Design_Updated/Program Counter /PC_IN'
+		},
+		{
 			'name' => '/Final_Design_Updated/Subsystem3/Out6'
+		},
+		{
+			'name' => '/Final_Design_Updated/Subsystem3/Out3'
 		},
 		{
 			'name' => '/Final_Design_Updated/Mux5/Out1'
 		},
 		{
-			'name' => '/Final_Design_Updated/ALU/Out1'
+			'name' => '/Final_Design_Updated/Black Box2/Out1'
+		},
+		{
+			'name' => '/Final_Design_Updated/Black Box2/Out2'
+		},
+		{
+			'name' => '/Final_Design_Updated/Mux1/Out1'
+		},
+		{
+			'name' => '/Final_Design_Updated/Black Box1/Out2'
+		},
+		{
+			'name' => '/Final_Design_Updated/Black Box1/Out1'
 		},
 		{
 			'name' => '/Final_Design_Updated/Mux/Out1'
@@ -28,22 +43,7 @@
 			'name' => '/Final_Design_Updated/Instruction Memory/Instruction'
 		},
 		{
-			'name' => '/Final_Design_Updated/Mux1/Out1'
-		},
-		{
-			'name' => '/Final_Design_Updated/Program Counter /PC_IN'
-		},
-		{
-			'name' => '/Final_Design_Updated/Black Box2/Out2'
-		},
-		{
-			'name' => '/Final_Design_Updated/Black Box1/Out1'
-		},
-		{
-			'name' => '/Final_Design_Updated/Black Box1/Out2'
-		},
-		{
-			'name' => '/Final_Design_Updated/Black Box2/Out1'
+			'name' => '/Final_Design_Updated/ALU/Out1'
 		},
 	],
 }
