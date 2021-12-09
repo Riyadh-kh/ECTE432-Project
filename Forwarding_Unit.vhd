@@ -23,17 +23,17 @@ begin
 process(EX_MEM_Rd, MEM_WB_Rd, EX_MEM_RegWrite, MEM_WB_RegWrite, ID_EX_Rs, ID_EX_Rt)
 begin
 
-if (MEM_WB_RegWrite ='1' and MEM_WB_Rd=ID_EX_Rs) then
+if (EX_MEM_RegWrite ='1' and EX_MEM_Rd /= "00000" and EX_MEM_Rd=ID_EX_Rs) then
 forwardA <= "10";
-elsif (EX_MEM_RegWrite = '1' and EX_MEM_Rd=ID_EX_Rs) then
+elsif (MEM_WB_RegWrite = '1' and EX_MEM_Rd /= "00000" and MEM_WB_Rd=ID_EX_Rs) then
 forwardA <= "01";
 else
 forwardA<= "00";
 end if;
 
-if (MEM_WB_RegWrite ='1' and ID_EX_Rt=MEM_WB_Rd) then
+if (EX_MEM_RegWrite ='1' and EX_MEM_Rd /= "00000" and ID_EX_Rt=EX_MEM_Rd) then
 forwardb <= "10";
-elsif (EX_MEM_RegWrite = '1' and ID_EX_Rt=EX_MEM_Rd) then
+elsif (MEM_WB_RegWrite = '1' and EX_MEM_Rd /= "00000" and MEM_WB_Rd=ID_EX_Rt) then
 forwardB <= "01";
 else
 forwardB<= "00";

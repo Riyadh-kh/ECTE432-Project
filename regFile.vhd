@@ -23,7 +23,7 @@ signal registers : registerFile:=((others=> (others=>'0')));
  process (clk) is
 
  begin
- if rising_edge(clk) then
+ if falling_edge(clk) then
  if regwrite = '1' then
  registers(to_integer(unsigned(writereg))) <= writedata;
  end if;
