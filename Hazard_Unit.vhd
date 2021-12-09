@@ -23,7 +23,7 @@ process(ID_EX_MemRead, IF_ID_Rs, ID_EX_Rt, IF_ID_Rt) is
 
 begin
 
-if (ID_EX_MemRead='1') and (IF_ID_Rs = IF_ID_Rt) then
+if (ID_EX_MemRead='1') and (IF_ID_Rs = ID_EX_Rt) then
 	nop<='1';
 	PCWrite<='0';
 	ID_IF_Write<='0';
