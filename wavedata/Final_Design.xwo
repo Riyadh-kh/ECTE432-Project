@@ -1,0 +1,22 @@
+{
+	'objects' => [
+		{
+			'name' => '/Final_Design/ALU/Out1'
+		},
+		{
+			'name' => '/Final_Design/Logical/Out1'
+		},
+		{
+			'name' => '/Final_Design/Control Unit/Out5'
+		},
+		{
+			'name' => '/Final_Design/Instruction Memory/Out1'
+		},
+		{
+			'name' => '/Final_Design/Clock'
+		},
+		{
+			'name' => '/Final_Design/Mux3/Out1'
+		},
+	],
+}
